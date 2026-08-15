@@ -67,7 +67,6 @@
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_R THUMBS>;
-            hold-trigger-on-release;
         };
 
         // Right-hand home row mods (triggers hold ONLY when left keys or thumbs are pressed)
@@ -80,7 +79,6 @@
             require-prior-idle-ms = <150>;
             bindings = <&kp>, <&kp>;
             hold-trigger-key-positions = <KEYS_L THUMBS>;
-            hold-trigger-on-release;
         };
     };
 
