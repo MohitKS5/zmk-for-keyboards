@@ -87,6 +87,22 @@
     combos {
         compatible = "zmk,combos";
 
+        // -- Tier 0: Bootloader --
+
+        combo_bootloader_left {
+            bindings = <&bootloader>;
+            key-positions = <0 1 4 5>;          // outer four top-row keys, left half
+            timeout-ms = <50>;
+            require-prior-idle-ms = <2000>;
+        };
+
+        combo_bootloader_right {
+            bindings = <&bootloader>;
+            key-positions = <6 7 10 11>;        // outer four top-row keys, right half
+            timeout-ms = <50>;
+            require-prior-idle-ms = <2000>;
+        };
+
         // -- Tier 1: Essential --
 
         combo_caps_word {
