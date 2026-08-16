@@ -266,7 +266,7 @@
 &none          &kp EXCL     &kp HASH     &kp DLLR      &kp PRCNT     &kp GRAVE      &kp CARET   &kp ASTRK     &kp AMPS      &kp PIPE     &kp TILDE    &none
 &none          &kp LBRC     &kp LPAR     &kp RPAR      &kp RBRC      &kp SEMI       &hmr RSHFT EQUAL &hmr RCTRL MINUS &hmr RALT PLUS &hmr RGUI FSLH &kp COLON &none
 &none          &kp LBKT     &kp LT       &kp GT        &kp RBKT      &kp AT         &kp SQT     &kp DQT       &kp BSLH      &kp QMARK    &kp UNDER    &none
-                                         &kp LPAR      &kp RPAR      &kp UNDER      &none       &none         &none
+                                         &none         &none         &none          &kp UNDER   &kp LPAR      &kp RPAR
             >;
         };
 
