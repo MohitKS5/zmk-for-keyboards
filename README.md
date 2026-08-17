@@ -11,6 +11,24 @@ Auto-generated from [`config/corne.keymap`](config/corne.keymap) via [keymap-dra
 
 The SVG updates automatically on push via the [Draw Keymap](.github/workflows/draw-keymap.yml) workflow.
 
+## Deviations from Miryoku
+
+1. **SYM: Pascal Getreuer's symbol layout**
+   a. Two-handed symbols instead of Miryoku's one-handed left
+   b. Right home row keeps `&hmr` mods for cross-hand use
+2. **NAV: ESDF inverted-T arrows**
+   a. UP on top row (pos 8), LEFT/DOWN/RIGHT on home row (pos 19/20/21)
+   b. Replaces Miryoku's HJKL all-on-home-row layout
+   c. Undo moved to pos 18 (below redo) to make room for UP on top row
+   d. Clipboard stays on NAV: redo(6), paste(7), UP(8), copy(9), cut(10), undo(18)
+3. **MOUSE: ESDF inverted-T movement**
+   a. Same spatial pattern as NAV for mouse movement
+   b. Scroll keys on bottom row
+4. **MEDIA: no RGB, repurposed slots**
+   a. RGB replaced with brightness (C_BRI_DN/UP), lock (Ctrl+Cmd+Q), Ctrl+Space on right top row
+5. **All GUI shortcuts → Ctrl**
+   a. `LC()` instead of `LG()` throughout combos and layers
+
 ## Display
 
 - **Left (central):** Built-in ZMK status screen (layer, battery, BT)
