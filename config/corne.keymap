@@ -95,12 +95,12 @@
             require-prior-idle-ms = <2000>;
         };
 
-        combo_bootloader_right {
-            bindings = <&bootloader>;
-            key-positions = <6 7 10 11>;        // outer four top-row keys, right half
-            timeout-ms = <50>;
-            require-prior-idle-ms = <2000>;
-        };
+        // NOTE: there is deliberately no bootloader combo for the right half.
+        // Combos are always evaluated on the central and fire a virtual key event
+        // hardcoded to SOURCE_LOCAL, so &bootloader (locality EVENT_SOURCE) always
+        // resets the LEFT half no matter which positions the combo lists. Only a
+        // real key binding on a right-half position carries source = peripheral and
+        // reaches the right half — see MEDIA layer position 11 (&bootloader).
 
         // -- Tier 1: Essential --
 
@@ -254,7 +254,7 @@
         media_layer {
             display-name = "MEDIA";
             bindings = <
-&none          &none        &none        &none         &none         &none          &kp C_BRI_DN &kp C_BRI_UP  &kp LC(LG(Q)) &kp LC(SPACE) &none       &none
+&none          &none        &none        &none         &none         &none          &kp C_BRI_DN &kp C_BRI_UP  &kp LC(LG(Q)) &kp LC(SPACE) &none       &bootloader
 &none          &kp LGUI     &kp LALT     &kp LCTRL     &kp LSHFT     &none          &ext_power EP_TOG &kp C_PREV  &kp C_VOL_DN  &kp C_VOL_UP &kp C_NEXT   &none
 &none          &none        &none        &none         &none         &none          &out OUT_TOG &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR
                                          &none         &none         &none          &kp C_STOP  &kp C_PP      &kp C_MUTE
