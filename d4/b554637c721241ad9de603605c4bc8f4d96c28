@@ -1,0 +1,20 @@
+config/corne.keymap
+  s_3f7165f2207db7::t_c1cb1a47a16b3a 237
+  s_3f7165f2207db7::t_2046aa1b531218 239
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.24",
+  "base_commit_sha": "d4b554637c721241ad9de603605c4bc8f4d96c28",
+  "prompts": {},
+  "sessions": {
+    "s_3f7165f2207db7": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "cbe4380b-0d9f-4592-acf3-19fb73c95e08",
+        "model": "claude-sonnet-5-5"
+      },
+      "human_author": "mohsingh <mohsingh@paloaltonetworks.com>"
+    }
+  }
+}
